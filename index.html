@@ -3,41 +3,87 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Yousuf's Portfolio</title>
+  <title>Yousufuddin Ahmed</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f4f4f4;
-      margin: 0;
-      padding: 0;
+    :root {
+      --primary-color: #1abc9c;
+      --dark-color: #2c3e50;
+      --light-color: #ecf0f1;
+      --text-color: #333;
     }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--light-color);
+      color: var(--text-color);
+    }
+
     header {
-      background: #2c3e50;
+      background-color: var(--dark-color);
       color: white;
-      padding: 20px;
+      padding: 40px 20px;
       text-align: center;
     }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    header p {
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
+
     section {
-      padding: 20px;
-      max-width: 800px;
-      margin: auto;
-      background: white;
-      margin-top: 20px;
-      border-radius: 8px;
+      max-width: 900px;
+      margin: 30px auto;
+      background-color: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     }
+
     h2 {
-      color: #2c3e50;
+      color: var(--primary-color);
+      border-bottom: 2px solid var(--primary-color);
+      padding-bottom: 5px;
     }
+
     ul {
-      list-style-type: square;
+      list-style: none;
+      padding-left: 0;
+    }
+
+    ul li {
+      padding: 8px 0;
+      position: relative;
       padding-left: 20px;
     }
+
+    ul li::before {
+      content: "✔";
+      position: absolute;
+      left: 0;
+      color: var(--primary-color);
+    }
+
     footer {
-      text-align: center;
-      padding: 10px;
-      background: #2c3e50;
+      background-color: var(--dark-color);
       color: white;
-      margin-top: 20px;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2em;
+      }
+      section {
+        padding: 20px;
+      }
     }
   </style>
 </head>
@@ -48,7 +94,7 @@
   </header>
 
   <section>
-    <h2>Education</h2>
+    <h2>🎓 Education</h2>
     <p>Bachelor's in Computer Science and Engineering</p>
     <ul>
       <li>Hands-on experience in software development</li>
@@ -57,7 +103,7 @@
   </section>
 
   <section>
-    <h2>Skills</h2>
+    <h2>🛠️ Skills</h2>
     <ul>
       <li>AWS Architecture: VPC, EC2, ALB, RDS, Security Groups</li>
       <li>DevOps: Jenkins, Maven, SonarQube, CI/CD pipelines</li>
@@ -69,7 +115,7 @@
   </section>
 
   <section>
-    <h2>Projects & Experience</h2>
+    <h2>📁 Projects & Experience</h2>
     <ul>
       <li>Freelance AI Chatbot Reviewer for Outlier</li>
       <li>Three-tier AWS Web App with Load Balancing & Health Checks</li>
@@ -78,7 +124,7 @@
   </section>
 
   <section>
-    <h2>Interests & Goals</h2>
+    <h2>🚀 Interests & Goals</h2>
     <ul>
       <li>Cloud-native DevOps & Scalable Architecture</li>
       <li>Professional Documentation & Portfolio Building</li>
@@ -87,7 +133,7 @@
   </section>
 
   <footer>
-    <p>© 2025 Yousufuddin Ahmed</p>
+    <p>© 2025 Yousuf </p>
   </footer>
 </body>
 </html>
